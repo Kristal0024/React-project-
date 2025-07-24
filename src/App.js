@@ -4,42 +4,77 @@ import './App.css';
 function App() {
   return (
     <>
-    <h2>kristal Shrestha</h2>
-        <p>Kristalstha2@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;+977 0979887 &nbsp;&nbsp;<a href="https://github.com/Kristal0024" target="_blank">Kristal0024</a>
-        <a href="https://www.linkedin.com/in/kristal-shrestha-040a0134b/">LinkedIn</a></p>
-        <p>I am passionate about web development, i love to create web designes. I am currently pursuing bachelors. I am proficient in css and i am constantly learning new frontend technologies to imorove my skills.</p>
-        <div class="">
-            <h3>Education</h3>
-            <ul>
-                <li>Tribhuvan University <b>(Bim)-2023 batch</b></li>
-                <li>Millenium Secondary school <b>(+2)-2022 batch</b></li>
+        <nav>
+            <div><h1>Logo Here</h1></div>
+           <div>
+             <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Portfolio</li>
+                <li>Service</li>
+                <li>Blog</li>
+                <li><button>Download CV</button></li>
             </ul>
+           </div>
+        </nav>
+        <main>
+        <div className="landing">
+              <div className="details">
+            <div><h3>Hello, I'm</h3></div>
+            <div><h3>Kristal Shrestha</h3></div>
+            <div><p>A Creative Designer From Nepal</p></div>
+            <div><p>I'm Creative Designer based in Nepal, and i'm very passionate and dedicated to my work.</p></div>
+            <div><button>About Me</button>&nbsp;&nbsp;<a href="">Facebook</a>&nbsp;&nbsp;<a href="">linkedin</a>&nbsp;&nbsp;<a href="">GitHub</a></div>
+            </div>
+            <div className="avatar">
+              <img src="/pic.png" alt="This is my picture" />
+              <img src="/html.png" alt="" />
+              <img src="/css.png" alt="" />
+              <img src="/js.png" alt="" />
+            </div>
         </div>
-        <div class="">
-            <h3>Skills</h3>
-            <ul>
-                <li>HTML</li>
-                <li>css</li>
-                <ul>
-                    <li>Tailwind css</li>
-                    <li>scss</li>
-                </ul>
-                <li>javascript</li>
-                <li>wordpress</li>
-                <li>web framework</li>
-                <ul>
-                    <li>React Js</li>
-                    <li>next js</li>
-                    <li>Bootstrap</li>
-                </ul>
-                </ul>
+        <div className="">
+          <ul>
+            <li>
+              <div className=""><img src="" alt="image" /><h3>Pixel Perfect</h3>
+              <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p></div>
+            </li>
+            <li>
+              <div className=""><img src="" alt="image" /><h3>High Quality</h3>
+              <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p></div>
+            </li>
+            <li>
+              <div className=""><img src="" alt="image" /><h3>Awesome Idea</h3>
+              <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p></div>
+            </li>
+          </ul>
         </div>
-        <div class="">
-            <h3>Experiance</h3>
-            <ul>
-                <li>Frontend developer at xyz company</li>
-            </ul>
+        <div className="">
+          <div className="left">
+            <img src="" alt="here is an image" />
+            <div className="year">
+              <h3>18</h3>
+              <span>Years of <br />success</span>
+            </div>
+             <div className="Projests">
+              <h3>9K</h3>
+              <span>total <br />Projects</span>
+            </div>
+          </div>
+          <div className="right">
+            <div className="title">
+              <span>I'm a designer</span>
+              <h3>I can Design Anything You Want</h3>
+            </div>
+            <div className="">
+              <p>Hello there! I'm a web designer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
+            </div>
+            <div className="">
+              <button>Hire Me</button>
+            </div>
+          </div>
         </div>
+        </main>
         </>
   );
 }
