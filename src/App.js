@@ -1,76 +1,81 @@
 import logo from './logo.svg';
 import './App.css';
+import myimage from './assets/pic.png'
+import jslogo from './assets/js.png'
+import csslogo from './assets/css.png'
+import htmllogo from './assets/html.png'
+import redlogo from './assets/1.png'
+import greenlogo from './assets/2.png'
+import yellologo from './assets/3.png'
+import students from './assets/students.png'
 
 function App() {
   return (
     <>
         <nav>
-            <div><h1>Logo Here</h1></div>
-           <div>
+            <div className='logowrapper'><h1>Logo Here</h1></div>
+           <div className='ulwrapper'>
              <ul>
                 <li>Home</li>
                 <li>About</li>
                 <li>Portfolio</li>
                 <li>Service</li>
                 <li>Blog</li>
-                <li><button>Download CV</button></li>
             </ul>
+                <button className='Download_btn'>Download&nbsp;CV</button>
            </div>
         </nav>
         <main>
         <div className="landing">
               <div className="details">
-             <h3><span className='color'>Hello, I'm</span><br />
-            Kristal Shrestha</h3>
-            <p>A Creative Designer From Nepal <br />
-            I'm Creative Designer based in Nepal, and i'm very passionate and dedicated to my work.</p>
-            <button className='Aboutbtn'>About Me</button>&nbsp;&nbsp;<a href="">Facebook</a>&nbsp;&nbsp;<a href="">linkedin</a>&nbsp;&nbsp;<a href="">GitHub</a>
+             <h3><span className='details-h3'>Hello, I'm</span> </h3><br />
+            <h3 className='namewrapper'>Kristal Shrestha</h3><br />
+            <p>A Creative Designer From Nepal 
+              <br /><br />
+            I'm Creative Designer based in Nepal, and i'm very passionate and dedicated to my work.</p><br />
+            <div className="details_linkwrapper">
+                 <button className='Aboutbtn'>About Me</button>&nbsp;&nbsp;<a href=""><i class="fa-brands fa-facebook-f"></i></a>&nbsp;&nbsp;<a href=""><i class="fa-brands fa-square-linkedin"></i></a>&nbsp;&nbsp;<a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
             </div>
             <div className="avatar">
-              <img src="" alt="picture" />
-              <img src="/html.png" alt="" />
-              <img src="/css.png" alt="" />
-              <img src="/js.png" alt="" />
+              <img src={myimage} alt="this is a profile picture" className='myimage' />
+              <img src={htmllogo} alt="this is html logo" className='htmllogo'/>
+              <img src={csslogo} alt="this is css logo" className='csslogo'/>
+              <img src={jslogo} alt="this is js logo"className='jslogo' />
             </div>
         </div>
-        <div className="">
-          <ul>
-            <li>
-              <div className=""><img src="" alt="image" /><h3>Pixel Perfect</h3>
+        <div className="process">
+              <div className="pixel-perfect"><img src={redlogo} alt="image" /><h3>Pixel Perfect</h3>
               <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p></div>
-            </li>
-            <li>
-              <div className=""><img src="" alt="image" /><h3>High Quality</h3>
+              <div className="high-quality"><img src={greenlogo} alt="image" /><h3>High Quality</h3>
               <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p></div>
-            </li>
-            <li>
-              <div className=""><img src="" alt="image" /><h3>Awesome Idea</h3>
+              <div className="awesome-idea"><img src={yellologo} alt="image" /><h3>Awesome Idea</h3>
               <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p></div>
-            </li>
-          </ul>
         </div>
-        <div className="">
+        <div className="About">
           <div className="left">
-            <img src="" alt="here is an image" />
+            <div className="imageholder">
+              <img src={students} alt="here is an image" className='studentsimage'/>
             <div className="year">
               <h3>18</h3>
               <span>Years of <br />success</span>
             </div>
-             <div className="Projests">
+             <div className="projects">
               <h3>9K</h3>
               <span>total <br />Projects</span>
+            </div>
             </div>
           </div>
           <div className="right">
             <div className="title">
-              <span className='color'>I'm a designer</span>
-              <h3>I can Design Anything You Want</h3>
+              <h3><span className='designer'>I'm a Designer</span></h3>
+              <h3 className='titleh3-wrapper'>I can Design Anything You Want</h3>
             </div>
-            <div className="">
+            <div className="pwrapper">
               <p>Hello there! I'm a web designer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
             </div>
             <div className="">
-              <button>Hire Me</button>
+              <button className='hirebtn'>Hire Me</button>
             </div>
           </div>
         </div>
@@ -125,7 +130,7 @@ function App() {
               <img src="" alt="Icon" />
               <div className="">
                 <h3>Creative Design</h3>
-                <span>Starts from <span>$99</span></span>
+                <span>Starts from <span className='Amount_span'>$99</span></span>
                 <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
               </div>
             </li>
@@ -133,7 +138,7 @@ function App() {
               <img src="" alt="Icon" />
               <div className="">
                 <h3>Graphic Design</h3>
-                <span>Starts from <span>$99</span></span>
+                <span>Starts from <span className='Amount'>$99</span></span>
                 <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
               </div>
             </li>
@@ -141,7 +146,7 @@ function App() {
               <img src="" alt="Icon" />
               <div className="">
                 <h3>UI/UX Design</h3>
-                <span>Starts from <span>$99</span></span>
+                <span>Starts from <span className='Amount'>$99</span></span>
                 <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
               </div>
             </li>
@@ -149,7 +154,7 @@ function App() {
               <img src="" alt="Icon" />
               <div className="">
                 <h3>Web Design</h3>
-                <span>Starts from <span>$99</span></span>
+                <span>Starts from <span className='Amount'>$99</span></span>
                 <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
               </div>
             </li>
@@ -234,7 +239,7 @@ function App() {
          </div>
         </div>
         <div className="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7064.609077968113!2d83.46243300000002!3d27.707882000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399687a9e810c4af%3A0x330398c480aee01b!2sPari%20Butwal!5e0!3m2!1sen!2snp!4v1753426254096!5m2!1sen!2snp" width="1200" height="400" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7064.609077968113!2d83.46243300000002!3d27.707882000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399687a9e810c4af%3A0x330398c480aee01b!2sPari%20Butwal!5e0!3m2!1sen!2snp!4v1753426254096!5m2!1sen!2snp" width="1000" height="400" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <footer>
           <div className=""><p>Developed with love by Kristal &copy; 2025</p></div>
