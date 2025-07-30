@@ -8,6 +8,9 @@ import redlogo from './assets/1.png'
 import greenlogo from './assets/2.png'
 import yellologo from './assets/3.png'
 import students from './assets/students.png'
+import magicart from './assets/127.jpg'
+import triangle from './assets/126.jpg'
+import skillimg from './assets/skill.jpg'
 
 function App() {
   return (
@@ -79,13 +82,13 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="">
-         <div className="">
-           <p className='color'>Portfolio</p>
+        <div className="portfolio">
+         <div className="portfolio-details">
+           <p className='color'>Portfolio</p><br />
           <h3>My Amazing Works</h3>
-          <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+          <p className='portfolio-p'>Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
          </div>
-         <div className="">
+         <div className="portfolio-list">
           <ul>
             <li>All</li>
             <li>Youtube</li>
@@ -93,14 +96,14 @@ function App() {
             <li>Details</li>
           </ul>
          </div>
-         <div className="">
-          <img src="" alt="Mockup Shape" />
-          <img src="" alt="Magic art" />
+         <div className="gallery">
+          <img src={triangle} alt="Mockup Shape" className='triangle-img' />
+          <img src={magicart} alt="Magic art" className='art-img' />
           <img src="" alt="Art System" />
          </div>
         </div>
-        <div className="">
-          <div className="left">
+        <div className="Skills">
+          <div className="skill-left">
             <p className='color'>Design is Life</p>
             <h3>I Develop Skills Regularly to Keep Me Update</h3>
             <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
@@ -114,8 +117,8 @@ function App() {
               <progress value="60" max="100"></progress>
               </div>
           </div>
-          <div className="right">
-            <img src="" alt="here is an image" />
+          <div className="skill-right">
+            <img src={skillimg} alt="here is an image" className='skillimg'/>
           </div>
         </div>
            <div className="">
@@ -241,11 +244,11 @@ function App() {
         <div className="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7064.609077968113!2d83.46243300000002!3d27.707882000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399687a9e810c4af%3A0x330398c480aee01b!2sPari%20Butwal!5e0!3m2!1sen!2snp!4v1753426254096!5m2!1sen!2snp" width="1000" height="400" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        </main>
         <footer>
           <div className=""><p>Developed with love by Kristal &copy; 2025</p></div>
           <div className=""><a href="">Terms And Conditions</a>&nbsp;<a href="">Privacy Policy</a></div>
         </footer>
-        </main>
         </>
   );
 }

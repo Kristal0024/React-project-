@@ -10,7 +10,6 @@ box-sizing: border-box;
 body{
   background-color: #2b2d33;
   color: #ffff;
-  padding: 0 40px;
   font-family: "open sans",sans-serif;
 }
 main{
@@ -18,13 +17,16 @@ padding: 0 100px;
 }
 nav{
   height: 10vh;
-  width:80%;
+  width:100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 2% 10%;
+  /* margin: 0 auto; */
+  /* left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1; */
 }
 nav ul{
   width: 100%;
@@ -229,4 +231,92 @@ nav ul li{
   border-radius: 2rem;
   background-color: transparent;
   color: #ffff;
+}
+.portfolio{
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+}
+.portfolio-details{
+  height: fit-content;
+  /* border:2px solid red; */
+  text-align: center;
+  margin: 0 380px;
+  line-height: 1.5;
+}
+.portfolio .color{
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  text-align: center;
+}
+.portfolio-details h3{
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.portfolio-p{
+  font-size: 1rem;
+  text-align: center;
+  width: 550px;
+  color: #b9b5c9;
+}
+.portfolio-list{
+  width: 100%;
+}
+.portfolio ul{
+  width: 100%;
+  padding: 90px 0;
+  text-align: center;
+}
+.portfolio ul li{
+  list-style-type: none;
+  display: inline;
+  padding: 0 30px;
+
+}
+.gallery{
+  width: 100%;
+  height: fit-content;
+}
+.triangle-img{
+  width: 400px;
+  height: 500px;
+}
+.art-img{
+  width: 400px;
+  height: 500px;
+}
+.Skills{
+  width: 100%;
+  height:100vh;
+  display: flex;
+}
+.skill-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  gap: 15px;
+}
+.skill-right{
+  width: 50%;
+}
+.skillimg{
+  width: 100%;
+  margin: auto 0;
+}
+
+
+
+
+
+
+
+
+
+footer{
+  height: 150px;
+  background-color: #3f4453;
+  padding: none;
 }
