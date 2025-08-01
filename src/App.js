@@ -11,6 +11,12 @@ import students from './assets/students.png'
 import magicart from './assets/127.jpg'
 import triangle from './assets/126.jpg'
 import skillimg from './assets/skill.jpg'
+import webp1 from './assets/1.webp'
+import webp2 from './assets/2.webp'
+import webp3 from './assets/3.webp'
+import webp4 from './assets/4.webp'
+import { LiaIdCardSolid } from "react-icons/lia";
+import { BsWindow } from "react-icons/bs";
 
 function App() {
   return (
@@ -107,9 +113,9 @@ function App() {
             <p className='color'>Design is Life</p>
             <h3>I Develop Skills Regularly to Keep Me Update</h3>
             <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
-            <div className="">
-              <span>Html</span><br />
-              <progress value="70" max="100"></progress>
+            <div className="progress-bar">
+              <span className='html-wrapper'>Html</span><br />
+              <progress value="70" max="100" className='first-progress'></progress>
               <br />
               <span>CSS</span><br />
               <progress value="60" max="100"></progress><br />
@@ -121,54 +127,59 @@ function App() {
             <img src={skillimg} alt="here is an image" className='skillimg'/>
           </div>
         </div>
-           <div className="">
-         <div>
+           <div className="services">
+         <div className='services-head'>
             <p className='color'>Services</p>
           <h3>What i Do For Clients</h3>
-          <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+          <p className='services-p'>Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
          </div>
-         <div className="">
-          <ul>
-            <li>
-              <img src="" alt="Icon" />
-              <div className="">
-                <h3>Creative Design</h3>
+         <div className="cards">
+              <div className="card">
+              <div className='icon'><img src={webp1} alt="Icon" className='redimg'/>
+              <i class="fa-solid fa-chart-diagram"></i></div>
+              <div className='card-detail'>  <h3>Creative Design</h3>
                 <span>Starts from <span className='Amount_span'>$99</span></span>
-                <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
+                <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p></div>
               </div>
-            </li>
-             <li>
-              <img src="" alt="Icon" />
-              <div className="">
-                <h3>Graphic Design</h3>
+              <div className="card">
+              <div className='icon'>
+                <img src={webp2} alt="Icon" />
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <div className='card-detail'>
+                  <h3>Graphic Design</h3>
                 <span>Starts from <span className='Amount'>$99</span></span>
                 <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
               </div>
-            </li>
-             <li>
-              <img src="" alt="Icon" />
-              <div className="">
-                <h3>UI/UX Design</h3>
+              </div>
+              <div className="card">
+              <div className='icon'><img src={webp3}alt="Icon" />
+              <LiaIdCardSolid className='idcard'/>
+              </div>
+              <div className='card-detail'>
+                  <h3>UI/UX Design</h3>
                 <span>Starts from <span className='Amount'>$99</span></span>
                 <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
               </div>
-            </li>
-             <li>
-              <img src="" alt="Icon" />
-              <div className="">
-                <h3>Web Design</h3>
+              </div>
+              <div className="card">
+              <div className='icon'>
+                <img src={webp4} alt="Icon" />
+                <BsWindow className='webdesign'/>
+              </div>
+              <div className='card-detail'>
+                  <h3>Web Design</h3>
                 <span>Starts from <span className='Amount'>$99</span></span>
                 <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
               </div>
-            </li>
-          </ul>
+              </div>
          </div>
         </div>
-        <div className="">
-        <div>
+        <div className="test">
+        <div className='testimonials-details'>
             <p className='color'>Testimonials</p>
           <h3>What My clients say</h3>
-          <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+          <p className='testimonials-p'>Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
          </div>
         </div>
         <div className="Blog">
